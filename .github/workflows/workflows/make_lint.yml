@@ -1,0 +1,11 @@
+name: GitHub Actions - Lint
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  Make-Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make lint
