@@ -29,6 +29,6 @@ jobs:
       - name: Make Lint
         run: |
           pwd
-          cd ~
+          # cd ~
           make lint
 
