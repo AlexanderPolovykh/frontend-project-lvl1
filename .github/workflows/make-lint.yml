@@ -29,6 +29,7 @@ jobs:
       - name: Make Lint
         run: |
           pwd
+          npm list
           # cd ~
           make lint
 
