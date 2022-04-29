@@ -27,4 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Make Lint
-        run: make lint
+        run: |
+          pwd
+          cd ~
+          make lint
+
