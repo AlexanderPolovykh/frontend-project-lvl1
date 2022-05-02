@@ -5,4 +5,4 @@
 
 [![CI](https://github.com/AlexanderPolovykh/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)](https://github.com/AlexanderPolovykh/frontend-project-lvl1/actions/workflows/make-lint.yml)
 
-[![asciicast](https://asciinema.org/a/491520.svg)](https://asciinema.org/a/491520)
+[![asciicast](https://asciinema.org/a/491520.svg)](https://asciinema.org/a/491520 ?t=45)
