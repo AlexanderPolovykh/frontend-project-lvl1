@@ -1,3 +1,31 @@
+<h2>Хекслет - Проект 1 - Игры разума</h2>
+
+Размещен: https://github.com/AlexanderPolovykh/frontend-project-lvl1
+
+Цель проекта - разработка NPM-пакета, реализующего несколько консольных "игр".
+
+Установка:
+
+make publish
+
+sudo npm link
+
+
+Использование (примеры ниже):
+
+brain-even
+
+brain-calc
+
+brain-gcd
+
+brain-progression
+
+brain-prime
+
+
+Использовал Windows WSL (Ubuntu 20.04 LTS), MS Visual Studio Code (Remote-WSL, ESLint)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AlexanderPolovykh/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AlexanderPolovykh/frontend-project-lvl1/actions)
 
