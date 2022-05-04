@@ -1,6 +1,9 @@
 import readlineSync from "readline-sync";
 
-const gameLogic = (name, makeQuestion, formAnswer) => {
+export const getRandomInt = (minv, maxv) =>
+  Math.floor(Math.random() * (maxv - minv + 1)) + minv;
+
+export const gameLogic = (name, makeQuestion, formAnswer) => {
   let result = true;
   let answer;
   let isInputCorrect = true;
@@ -26,4 +29,4 @@ const gameLogic = (name, makeQuestion, formAnswer) => {
   }
 };
 
-export default gameLogic;
+// export default gameLogic;

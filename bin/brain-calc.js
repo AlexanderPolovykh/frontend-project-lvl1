@@ -1,19 +1,21 @@
 #!/usr/bin/env node
 
 import askUsernameAndGreet from "../src/cli.js";
-import gameLogic from "../src/index.js";
+import { getRandomInt, gameLogic } from "../src/index.js";
 
-const getRandomInt = () => Math.floor(Math.random() * 100); // от 1 до 100
-
-const ops = ['+', '-', '*'];
-const getRandomOp = () => ops[Math.round(Math.random() * 2)];
+const ops = ["+", "-", "*"];
+const getRandomOp = () => ops[getRandomInt(0, 2)];
 
 const calcResult = (num1, num2, op) => {
   switch (op) {
-    case '+': return num1 + num2;
-    case '-': return num1 - num2;
-    case '*': return num1 * num2;
-    default: return NaN;
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    default:
+      return NaN;
   }
 };
 
@@ -25,8 +27,8 @@ const formAnswer = (str) => {
 };
 
 const makeQuestion = () => {
-  const num1 = getRandomInt();
-  const num2 = getRandomInt();
+  const num1 = getRandomInt(1, 99);
+  const num2 = getRandomInt(1, 99);
   const op = getRandomOp();
   const str = `${num1} ${op} ${num2}`;
   return [calcResult(num1, num2, op), str];
@@ -34,5 +36,5 @@ const makeQuestion = () => {
 
 // Calc game
 const name = askUsernameAndGreet();
-console.log('What is the result of the expression?');
+console.log("What is the result of the expression?");
 gameLogic(name, makeQuestion, formAnswer);

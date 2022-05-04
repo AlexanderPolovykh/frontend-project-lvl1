@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 import askUsernameAndGreet from "../src/cli.js";
-import gameLogic from '../src/index.js';
-
-const getRandomInt = () => Math.floor(Math.random() * 100); // от 1 до 100
+import { getRandomInt, gameLogic } from '../src/index.js';
 
 const isEven = (num) => (num % 2 === 0 ? "yes" : "no");
 
@@ -14,7 +12,7 @@ const formAnswer = (str) => {
 };
 
 const makeQuestion = () => {
-  const rndInt = getRandomInt();
+  const rndInt = getRandomInt(1, 99);
   return [isEven(rndInt), `${rndInt}`];
 };
 
