@@ -15,4 +15,4 @@ rules:
     - js: always
   #quotes: off
     # - avoidEscape: true
-  implicit-arrow-linebreak: off
+  #implicit-arrow-linebreak: off
