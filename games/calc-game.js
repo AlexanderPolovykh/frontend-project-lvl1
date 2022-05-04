@@ -1,19 +1,19 @@
-import askUsernameAndGreet from "../src/cli.js";
-import { getRandomInt, gameLogic } from "../src/index.js";
+import askUsernameAndGreet from '../src/cli.js';
+import { getRandomInt, gameLogic } from '../src/index.js';
 
 const minRandNum = 1;
 const maxRandNum = 99;
 
-const ops = ["+", "-", "*"];
+const ops = ['+', '-', '*'];
 const getRandomOp = () => ops[getRandomInt(0, 2)];
 
 const calcResult = (num1, num2, op) => {
   switch (op) {
-    case "+":
+    case '+':
       return num1 + num2;
-    case "-":
+    case '-':
       return num1 - num2;
-    case "*":
+    case '*':
       return num1 * num2;
     default:
       return NaN;
@@ -37,6 +37,6 @@ const makeQuestion = () => {
 export default () => {
   // Calc game
   const name = askUsernameAndGreet();
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
   gameLogic(name, makeQuestion, formAnswer);
 };

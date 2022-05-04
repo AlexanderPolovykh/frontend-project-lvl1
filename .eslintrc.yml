@@ -13,6 +13,6 @@ rules:
     - error
     - ignorePackages
     - js: always
-  quotes: off
+  #quotes: off
     # - avoidEscape: true
   implicit-arrow-linebreak: off

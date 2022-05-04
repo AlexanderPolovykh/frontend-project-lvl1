@@ -1,5 +1,5 @@
-import askUsernameAndGreet from "../src/cli.js";
-import { getRandomInt, gameLogic } from "../src/index.js";
+import askUsernameAndGreet from '../src/cli.js';
+import { getRandomInt, gameLogic } from '../src/index.js';
 
 const minRandNum = 3;
 const maxRandNum = 100;
@@ -32,6 +32,6 @@ const makeQuestion = () => {
 export default () => {
   // GCD game
   const name = askUsernameAndGreet();
-  console.log("Find the greatest common divisor of given numbers.");
+  console.log('Find the greatest common divisor of given numbers.');
   gameLogic(name, makeQuestion, formAnswer);
 };

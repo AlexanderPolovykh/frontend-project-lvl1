@@ -1,16 +1,16 @@
-import askUsernameAndGreet from "../src/cli.js";
-import { getRandomInt, gameLogic } from "../src/index.js";
+import askUsernameAndGreet from '../src/cli.js';
+import { getRandomInt, gameLogic } from '../src/index.js';
 
 const minRandNum = 1;
 const maxRandNum = 99;
 
 const isEven = (num) => num % 2 === 0;
 
-const yesOrNo = (result) => (result ? "yes" : "no");
+const yesOrNo = (result) => (result ? 'yes' : 'no');
 
 const formAnswer = (str) => {
   const ret = str.toLowerCase();
-  if (ret !== "yes" && ret !== "no") return [str, false]; // некорректный ввод!
+  if (ret !== 'yes' && ret !== 'no') return [str, false]; // некорректный ввод!
   return [ret, true];
 };
 

@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 export const getRandomInt = (minv, maxv) =>
   Math.floor(Math.random() * (maxv - minv + 1)) + minv;
@@ -11,16 +11,16 @@ export const gameLogic = (name, makeQuestion, formAnswer) => {
   let str;
   for (let idx = 0; idx < 3; idx += 1) {
     // задать вопрос
-    let strQuestion = "";
+    let strQuestion = '';
     [rightAnswer, strQuestion] = makeQuestion();
     console.log(`Question: ${strQuestion}`);
     // получить ответ
-    str = readlineSync.question("Your answer: ");
+    str = readlineSync.question('Your answer: ');
     [answer, isInputCorrect] = formAnswer(str);
     // проверить ответ
     result = result && isInputCorrect && rightAnswer === answer;
     if (!result) break;
-    else console.log("Correct!");
+    else console.log('Correct!');
   }
   if (result) console.log(`Congratulations, ${name}!`);
   else {
