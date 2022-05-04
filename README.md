@@ -6,3 +6,5 @@
 [![CI](https://github.com/AlexanderPolovykh/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)](https://github.com/AlexanderPolovykh/frontend-project-lvl1/actions/workflows/make-lint.yml)
 
 <a href="https://asciinema.org/a/491520" target="_blank"><img src="https://asciinema.org/a/491520.svg" /></a>
+
+<a href="https://asciinema.org/a/WtTPVEBrfTvjF7iX9epXkkpgn" target="_blank"><img src="https://asciinema.org/a/WtTPVEBrfTvjF7iX9epXkkpgn.svg" /></a>
