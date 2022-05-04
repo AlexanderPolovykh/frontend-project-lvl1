@@ -16,7 +16,6 @@ const getGCD = (num1, num2) => {
 };
 
 const formAnswer = (str) => {
-  // const answer = readlineSync.question("Your answer: ");
   const ret = Number.parseInt(str, 10);
   if (Number.isNaN(ret)) return [str, false]; // некорректный ввод!
   return [ret, true];

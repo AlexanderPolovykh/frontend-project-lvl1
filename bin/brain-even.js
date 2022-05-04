@@ -16,7 +16,7 @@ const makeQuestion = () => {
   return [isEven(rndInt), `${rndInt}`];
 };
 
-// checkEven game
+// Even game
 const name = askUsernameAndGreet();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 gameLogic(name, makeQuestion, formAnswer);
